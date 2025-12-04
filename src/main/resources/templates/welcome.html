@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<body>
+
+<h2 style="color:#6db33f;">Welcome</h2>
+
+<!-- ⭐ ОДНА РЕАЛЬНАЯ ФОТОГРАФИЯ -->
+<div style="text-align:center; margin-bottom:30px;">
+  <img th:src="@{/resources/images/pets.png}"
+       alt="Pets"
+       style="max-width:260px; border-radius:12px;">
+</div>
+
+
+<div class="row" style="margin-bottom:40px;">
+  <div class="col-md-12" style="font-size:17px; color:#444; line-height:1.6; max-width:900px;">
+
+    <p>
+      PetClinic is a demonstration application built using the Spring Framework.
+      It showcases how to manage owners, pets, veterinarians, and medical visits in a modern web system.
+    </p>
+
+    <p>
+      You can use the navigation menu above to explore different parts of the clinic:
+    </p>
+
+    <ul>
+      <li><strong>Find Owners</strong> — view and manage pet owners</li>
+      <li><strong>Pets & Visits</strong> — track pet details and visit history</li>
+      <li><strong>Veterinarians</strong> — see our specialists and their skills</li>
+      <li><strong>Error Messages</strong> — demonstration of application exceptions</li>
+    </ul>
+
+    <p>
+      This monolithic version is widely used for teaching architecture, testing frameworks,
+      and demonstrating how to migrate to microservices.
+    </p>
+
+  </div>
+</div>
+
+
+<!-- ⭐ OUR SERVICES -->
+<div style="padding:30px; background:#f7f7f7; border-radius:10px; margin-bottom:40px;">
+  <h3 style="color:#6db33f; margin-bottom:20px;">Our Services</h3>
+
+  <div class="row" style="font-size:16px; color:#444;">
+
+    <div class="col-md-4" style="text-align:center;">
+      <h4 style="color:#6db33f;">🐾 Pet Care</h4>
+      <p>Routine checkups, vaccinations and health consultations.</p>
+    </div>
+
+    <div class="col-md-4" style="text-align:center;">
+      <h4 style="color:#6db33f;">🩺 Diagnostics</h4>
+      <p>Advanced medical diagnostics and visit tracking.</p>
+    </div>
+
+    <div class="col-md-4" style="text-align:center;">
+      <h4 style="color:#6db33f;">👨‍⚕️ Veterinary Support</h4>
+      <p>Professional veterinarians with diverse expertise.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ⭐ ABOUT THE CLINIC -->
+<div style="padding:30px; background:#f5f5f5; border-radius:8px;">
+
+  <h3 style="color:#6db33f; margin-bottom:20px;">About the Clinic</h3>
+
+  <p style="font-size:16px; color:#555;">
+    Our clinic provides high-quality veterinary services for pets of all sizes.
+    From routine checkups to advanced treatment, our team is always ready to help.
+  </p>
+
+  <div class="row" style="margin-top:25px; text-align:center;">
+    <div class="col-md-4">
+      <h4 style="color:#6db33f;">12+ Years</h4>
+      <p>of experience</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4 style="color:#6db33f;">1000+ Pets</h4>
+      <p>treated every year</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4 style="color:#6db33f;">Expert Team</h4>
+      <p>licensed veterinarians</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ⭐ WHY CHOOSE US -->
+<div style="padding:30px; background:#ffffff; margin-top:40px; text-align:center;">
+  <h3 style="color:#6db33f; margin-bottom:20px;">Why Choose PetClinic?</h3>
+
+  <p style="font-size:16px; max-width:700px; margin:auto; color:#444;">
+    We combine modern technology with compassionate care.
+    Our system ensures reliable information management and smooth workflow
+    for both staff and pet owners.
+  </p>
+</div>
+
+</body>
+
+</html>
